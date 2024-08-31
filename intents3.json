@@ -17,6 +17,30 @@
             ],
             "context": [""]
         },
+        {
+            "tag": "mybooking",
+            "patterns": [
+                "Show me my booking list",
+                "mujhe booking list dikhao",
+                "mai apni pichli bookings dekhna chaunga",
+                "mujhe apni pichli bookings show karo",
+                "mujhe meri pichli bookings show karo",
+                "mujhe apni pichli bookings dekhni hai",
+                "mai apni pehle ki bookings ko dekhna chaunga",
+                "I want to see my previous bookings",
+                "I want my previous booking list",
+                "I wish to see my previous bookings",
+                "mai apni pichli bookings kaise dekh sakta hu",
+                "how can i see my previous bookings",
+                "mai apni poorani bookings dekhna chaunga",
+                "mujhe poorani tickets dikhao",
+                "mujhe poorani tickets ki list dikhao"
+            ],
+            "responses": [
+                "Here is your list :- http://127.0.0.1/api/tickets"
+            ],
+            "context": [""]
+        },
         {"tag": "query",
             "patterns": ["I have a query", "I want to know something", "can you guide me", "I have some doubts", "I am confuse"],
             "responses": ["I will assist you ", "feel free to ask questions", "I will help you"],
@@ -51,6 +75,8 @@
         {
             "tag": "book_ticket",
             "patterns": [
+                
+                "I want ticket for national science museum",
                 "ticket booking",
                 "ticket book",
                 "I want to book a ticket",
@@ -64,7 +90,8 @@
                 "I need to buy a ticket",
                 "How can I get entry tickets?",
                 "I want to reserve my visit",
-                "book tickets"
+                "book tickets",
+                "I want to book tickets"
             ],
             "responses": [
                 "I'd be happy to assist with purchasing tickets. Just click the link below: \n{link}",
@@ -164,6 +191,7 @@
         {
             "tag": "Ticket",
             "patterns": [
+                
                 "tickets",
                 "what is ticket price?",
                 "What are segregation of ticket price?",
@@ -249,327 +277,345 @@
             ]
         },
         {
-        "tag": "namaskar",
-            "patterns": [
-                "Koi hai?",
-                "kaise ho",
-                "kya haal hai",
-                "kya waha hai koi"
-            ],
-            "responses": [
-                "Namaste, mai aapki kaise madad kar sakta hoon?",
-                "Kaise ho aap! Museum ghumne mein main aapki kaise madad kar sakta hoon?",
-                "Namaskar! Main aapke liye kya kar sakta hoon?"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "prashan",
-            "patterns": [
-                "Mujhe ek sawaal poochhna hai",
-                "Mujhe kuch jaan'na hai",
-                "Kya aap mujhe guide kar sakte hain?",
-                "Mujhe kuch doubts hain",
-                "Main confuse hoon",
-                "Mai kuch puchna chahta hu",
-                "Mai duvidha mai hu"
-            ],
-            "responses": [
-                "Aap bejhijak sawal poocho Main aapki madad karunga",
-                "Sawaal poochne mai sankoch naa kare",
-                "Beshak Main aapki madad karoonga",
-                "Mujhe aapki madad karne mai khushi hogi"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "alvida",
-            "patterns": [
-                "Appa Phir milenge",
-                "Alvida",
-                "Aap se baat karke acha laga, dhanyavad",
-                "Agli baar tak ke liye"
-            ],
-            "responses": [
-                "Phir milenge!",
-                "Aapka din shubh ho",
-                "Bye! Jaldi phir aaiyega.",
-                "Mai aapki madad kar paaya mujhe iss baat ki khushi hai"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "shukriya",
-            "patterns": [
-                "Shukriya",
-                "Dhanyavad",
-                "Yeh bahut madadgar tha",
-                "Awesome, shukriya",
-                "Madad karne ke liye shukriya",
-                "Aapne meri bahut madad ki",
-                "Aapka kaam impressive hai",
-                "Aapke responses better ho rahe hain",
-                "Impressive",
-                "Aapke output impressive hain"
-            ],
-            "responses": [
-                "Mera sukh",
-                "Aapka swagat hai",
-                "Mujhe khushi hui yee jaanke ki mai aapki madad kar paya"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "prashan_uttar_positive",
-            "patterns": [
-                "Main accha hoon",
-                "Main theek hoon",
-                "Main khush hoon",
-                "Main awesome hoon",
-                "Main bahut khush hoon",
-                "Main achha mehsoos kar raha hoon",
-                "Main achha kar raha hoon"
-            ],
-            "responses": [
-                "Great!! Main aapki kaise madad kar sakta hoon?",
-                "Aapke liye khushi hui... Aaj main aapki madad kaise kar sakta hoon?"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "prashan_uttar_negative",
-            "patterns": [
-                "Main udaas hoon",
-                "Main khush nahi hoon",
-                "Mujhe achaa nahi lag raha hai",
-                "Main accha mehsus nahi kar raha hoon",
-                "Mera dil toota hua hai",
-                "Main gussa hoon",
-                "Main niraash hoon"
-            ],
-            "responses": [
-                "Thik hai!! Main samajhta hoon, aapko apne man ko dusri cheezon mein lagana chahiye. Chaliye shuru karte hain... Koshish karo apne nazdeek ek museum visit karo :)"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "nakaratmak",
-            "patterns": [
-                "Yeh poor response tha",
-                "Aap slow hain",
-                "Woh galat output tha",
-                "Yeh incorrect tha",
-                "Yeh sahi nahi tha",
-                "Aap awful hain",
-                "Galat",
-                "Aapne galti ki",
-                "Aapka output incorrect hai",
-                "Aapka kaam slow hai"
-            ],
-            "responses": [
-                "Mujhe maaf kariye. Lekin, main aasha karta hoon ki mere naye update ke baad aapko aisi pareshani nahi hogi... Tab tak, mujhe ek aur mauka dein"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "parchi_kaatna",
-            "patterns": [
-                "Ticket book karo",
-                "Main ticket book karna chahta hoon",
-                "Kya main tickets le sakta hoon?",
-                "Main ticket kaise khareedoon?",
-                "Museum ke liye ticket book karo",
-                "Mujhe ek ticket chahiye",
-                "Mere liye ticket reserve karo",
-                "Tickets kaise reserve karoon?",
-                "Main ticket kahaan se khareed sakta hoon?",
-                "Mujhe ticket khareedni hai",
-                "Entry tickets kaise milengi?",
-                "Main apne visit ko reserve karna chahta hoon",
-                "Mujhe Tickets book karne mai sahita chahiye"
-            ],
-            "responses": [
-                "Main khushi se aapko tickets khareedne mein madad karoonga. Neeche diye gaye link par click karein: \n{link}",
-                "Zaroor, main aapki madad kar sakta hoon. Tickets khareedne ke liye neeche diye gaye link ka istemal karein: \n{link}",
-                "Bilkul! Aap neeche diye gaye link par click karke apne tickets khareed sakte hain: \n{link}",
-                "Bilkul, main aapke liye tickets lene mai sahita kar sakta hu. Aage badhne ke liye yahan click karein: \n{link}",
-                "Koi problem nahi! Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Main yahaan hoon madad ke liye! Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Zaroor! Neeche diye gaye link ka palan karein apne tickets secure karne ke liye: \n{link}",
-                "Main uska dhyan rakh loonga. Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "ticket_rad_karna",
-            "patterns": [
-                "Booking cancel karo",
-                "Visit cancel karne ke steps",
-                "Main apne tickets cancel karna chahta hoon",
-                "Tickets cancel karo",
-                "Mujhe apna ticket cancel karna hai",
-                "Kya main apni booking cancel kar sakta hoon?",
-                "Main apna ticket kaise cancel karoon?",
-                "Mera ticket cancel karo please",
-                "Main apna museum ticket cancel karna chahta hoon",
-                "Tickets cancel karo",
-                "Main bookings cancel karna chahta hoon",
-                "Tickets cancel karo",
-                "Booking cancel karo",
-                "vigyan bhawan ki ticket cancel karo ",
-                "vigyan bhawan ki ticket radd karne mai meri sahaiyata karo"
-            ],
-            "responses": [
-                "Zaroor, main aapke ticket cancel karne mein madad kar sakta hoon. Aage badhne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Main aapki madad karoonga cancellation mein. Process shuru karne ke liye neeche diye gaye link ka palan karein: \n{link}",
-                "Zaroor! Aap apne ticket cancel karne ke liye neeche diye gaye link ka istemal kar sakte hain: \n{link}",
-                "Koi chinta nahi, main uska dhyan rakh loonga. Ticket cancel karne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Bilkul! Apne ticket cancellation shuru karne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Main yahaan hoon aapki madad karne ke liye. Simple click karein neeche diye gaye link par: \n{link}",
-                "Bilkul, main aapki madad kar loonga. Ticket cancel karne ke liye neeche diye gaye link par click karein: \n{link}",
-                "Main uska dhyan rakh loonga. Ticket cancel karne ke liye yahan click karein: \n{link}"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "delhi_vigyan_bhandar",
-            "patterns": [
-                "Mujhe nscm ke baare mein batao",
-                "Main delhi science centre ke baare mein jaan'na chahta hoon",
-                "Main delhi science museum ke baare mein jaan'na chahta hoon",
-                "Mujhe National Science Centre, Delhi ke baare mein batao",
-                "Main National Science Centre mein kya dekh sakta hoon?",
-                "Mujhe Delhi ke Science Museum ke baare mein batao?",
-                "Mujhe National Science museum Delhi ke details batao",
-                "Mujhe delhi science museum ke baare mein jaankari chahiye",
-                "Delhi science museum ke baare mein short mein batao",
-                "National Science Centre mein kya khaas hai?",
-                "Delhi ke Science Museum ke baare mein batao",
-                "Delhi Science Centre ki history kya hai?",
-                "National Science Centre kahan sith hai?",
-                "Main Delhi ke Science Centre mein kya seekh sakta hoon?",
-                "vigyan bhawan ki ticket book karo"
-            ],
-            "responses": [
-                "National Science Centre, Delhi, ek zabardast science museum hai jo aapko science aur technology ke vishay mein prabhavit karne wala experience dega. Aapko yahaan par alag-alag exhibits aur displays milenge jo scientific concepts aur innovations ko dikhate hain. Yeh centre Pragati Maidan, New Delhi mein sthit hai. Aapko yahaan par interactive exhibits, planetarium shows, aur bahut kuch dekhne ko milega!"
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "delhi_science_museum_khasiyat",
-            "patterns": [
-                "Mujhe Delhi Science Museum ke aakarshan ke baare mein batao",
-                "Delhi Science Museum ke attractions ke baare mein batao",
-                "Delhi Science Centre mein kya ummid kar sakta hoon?",
-                "Delhi Science Museum ki khasiyat kya hain?",
-                "Delhi Science Museum mein kaunse khaas events hote hain?",
-                "NSCM ke paryatakon ke aakarshan ke baare mein information do",
-                "NSCM ya Delhi Science Museum mein kya karna hai?",
-                "Delhi Science Museum ke features kya hain?",
-                "NSCM ki khasiyat kya hain?",
-                "Delhi Science Museum mein kaunse exhibits hain?",
-                "National Science Centre ke major highlights kya hain?",
-                "Delhi ke Science Centre mein dekhne layak cheezein kya hain?",
-                "Delhi Science Museum mein kaunse events attend kar sakta hoon?",
-                "National Science Centre mein kaunse interactive exhibits available hain?"
-            ],
-            "responses": [
-                "Kuch major attractions mein Energy Ball, Science on Sphere, 3D Film Show, aur Biotech Lab shamil hain. Centre mein interactive exhibits, ek aquarium, aur hands-on science activities ke liye ek Innovation Hub bhi hai.",
-                "1. Exhibits aur Galleries: Center mein kai permanent galleries hain, har ek science aur technology ke alag-alag aspects ko dedicated hai. Kuch prominent galleries mein shamil hain:\n\tHeritage Gallery: Jo Bharat ke science aur technology mein yogdan ko dikhata hai.\n\tFun Science Gallery: Interactive exhibits jo har umr ke visitors ke liye science seekhne ko mazedar banate hain.\n\tHuman Biology Gallery: Jo human body, uski anatomy, aur physiological processes par focus karta hai.\n\tPrehistoric Life Gallery: Earth par life ke evolution ko dikhata hai, prehistoric era se lekar modern times tak.\n\tInformation Revolution Gallery: Communication technology aur digital age ke advancements ko highlight karta hai.\n2. Interactive Exhibits: Center hands-on exhibits ke liye jaana jaata hai, jo visitors ko, khaaskar bachchon ko, scientific concepts mein engage karte hain practical aur enjoyable tareeke se.\n3. Science Shows aur Demonstrations: Regular live science shows, demonstrations, aur workshops organize ki jaati hain jo visitors ko aur engage karte hain. Yeh topics jaise physics, chemistry, aur environmental science par cover karte hain.\n4. 3D aur Science on a Sphere: Center mein ek 3D theater aur 'Science on a Sphere' exhibit bhi hai, jahan spherical projections Earth aur space ke baare mein immersive learning experience create karte hain.\n5. Temporary Exhibitions: Permanent galleries ke alawa, National Science Centre mein alag-alag contemporary science topics par temporary exhibitions bhi host ki jaati hain.\n6. Educational Programs: Center kai educational programs conduct karta hai, jisme science camps, teacher training workshops, aur students ke liye competitions shamil hain.\n7. Planetarium: National Science Centre ke paas hi Nehru Planetarium hai jo center ke educational offerings ko complement karta hai, astronomy mein immersive experience provide karta hai.",
-                "Science Fairs ka hissa baniye apne creative aur research-based skills ko nurture karne ke liye. Science Fairs young crowd ko attract karte hain jo mathematics/science mein achhe hain ya engineering mein apna career banana chahte hain.\nSky-watching sessions mein shamil ho Sky Observation Camp mein aur anubhav karein ki telescope se raat mein constellations, eclipses, meteor showers, aur doosre celestial bodies ko dekhne ka maza kya hai.\nHar din centre mein school students aur general audience ke liye organize hone wale alag-alag science shows ka anand lijiye. Yeh shows science learning ko fun aur interesting banane ke liye design kiye jaate hain. Kuch popular topics jo ek demonstrator explain karta hai, unmein Kitchen Chemistry, Super Cold Show, Sound Show, etc. shamil hain.\nImportant days jaise National Technology Day, World Health Day, World Population Day, Engineer’s Day, World Environment Day, World Telecommunication Day, aur World Health Day ko National Science Centre mein manaiye taaki aapko inn dinon ke commemorative mahine ka pata chale. Yeh celebrations logon mein awareness badhate hain aur unhe invite karne ke liye encourage bhi karte hain."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "parchi",
-            "patterns": [
-                "parchi",
-                "ticket ka price kya hai?",
-                "ticket price ka segregation kya hai?",
-                "parchi ka mulya",
-                "tickets ke baare mein batao",
-                "parchi mathe par",
-                "parchi kitne ki hai",
-                "ticket kitne ki hai",
-                "science museum delhi ke liye ticket ka price kya hai?"
-            ],
-            "responses": [
-                "National Science Centre, Delhi visit karne ke liye entry fee general public ke liye INR 70 per person hai. Agar aap 25 se zyada logon ke group mein travel kar rahe hain, toh aapko INR 60 per head dena hoga. Organized school groups se aane wale students ke liye charges INR 25 per head hain aur government school ke students ke liye INR 10 per head hain."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "samay",
-            "patterns": [
-                "Mujhe timings ke baare mein jaana hai",
-                "Visit karne ke timing kya hai?",
-                "Delhi Science Museum kab khulta hai?",
-                "Delhi Science Museum kab band hota hai?",
-                "Delhi Science Museum ke timings kya hain?",
-                "samay",
-                "Delhi Science Museum kis samay khulta hai"
-            ],
-            "responses": [
-                "Delhi Science Museum ke timings har roz 9:30 am se 6:00 pm tak hain. Museum public holidays aur festivals ke wajah se band ho sakta hai, iske liye latest news article refer karein."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "pahuchna_kaise_hai",
-            "patterns": [
-                "Wahan kaise pahunchna hai?",
-                "Main museum kaise pahunch sakta hoon?",
-                "Museum ke liye directions kya hain?",
-                "Museum pahunchne ke liye kya tareeke hain?",
-                "Delhi Science Museum pahunchne ke methods ke baare mein batao",
-                "sabse pass wali metro",
-                "Museum kee pas konsa metro station hai"
-            ],
-            "responses": [
-                "Delhi mein har umr ke logon ke liye kai tareeke ke transportation available hain. Apne holiday style aur budget ke hisaab se, aap inme se 3 options chun sakte hain:\nBy Metro: Indira Gandhi International Airport se Rajiv Chowk ke liye direct metro lein aur phir Rajiv Chowk se Pragati Maidan ke liye doosri metro lein. Wahan pahunchne ke baad, aap thoda walk kar sakte hain kyunki yeh sirf 1.2 km doori par hai.\nBy Bus: Ek aur convenient tareeka local bus ke zariye hai. Airport ke bahar se ek state-owned bus pakdiye apne desired destination par pocket-friendly prices mein pahunchne ke liye. Aapki suvidha ke liye, kai private buses bhi airport par available hain jo tourists ke liye dilli ke popular sightseeing places explore karne mein madad karti hain.\nBy Cab: Lastly, agar aap extra comfort chahte hain, toh Ola/Uber se ek rental taxi hire karein ya simply Delhi ke top car rental companies ke list se ek private cab chun lein. National Science Centre approximately airport se 15 km doori par hai aur yeh lagbhag 25 se 30 minutes lagenge yeh distance cab se cover karne mein."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "parking_hai",
-            "patterns": [
-                "Kya wahan parking available hai?",
-                "Parking ki suvidha hai kya?",
-                "Kya main National Science Centre par park kar sakta hoon?",
-                "Science center par parking ki suvidha hain?",
-                "Delhi Science Centre ke paas kahaan park kar sakta hoon?"
-            ],
-            "responses": [
-                "Haan, centre par parking facilities available hain, lekin weekend par spot secure karne ke liye jaldi pahunchna recommend kiya jaata hai."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "aas_paas_ki_aakarshan",
-            "patterns": [
-                "Paas mein dekhne layak jagah kaunsi hain?",
-                "Aas paas koi achi jagah hai?",
-                "Paas mein kaunse places visit kar sakta hoon?",
-                "National Science Centre ke paas kaunse attractions hain?",
-                "Science Centre ke aas-paas kya dekhne layak hain?",
-                "Nearby attractions ke baare mein batao",
-                "Paas mein special cheezein"
-            ],
-            "responses": [
-                "Nearby attractions mein India Gate, National Zoological Park, National Rail Museum, aur Purana Qila shamil hain. Yeh jagah historical aur cultural experiences ka mix offer karti hain."
-            ],
-            "context": [""]
-        },
-        {
-            "tag": "sampark_kare",
-            "patterns": [
-                "Main National Science Centre se kaise contact kar sakta hoon?",
-                "Sampark karne ke liye kya karna hoga?",
-                "Science Centre ke liye contact details"
-            ],
-            "responses": [
-                "Aap National Science Centre, Delhi se unke official phone number +91-11-2337-1703 par sampark kar sakte hai ya phir aap nscd@nscd.gov.in par email kar sakte hai"
-            ]
-        }
+            "tag": "namaskar",
+                "patterns": [
+                    "namaste aap kaise ho",
+                    "namaskar aap kaise ho",
+                    "namaste good morning",
+                    "namashkar good morning",
+                    "Koi hai?",
+                    "kaise ho",
+                    "kya haal hai",
+                    "kya waha hai koi"
+                ],
+                "responses": [
+                    "Namaste, mai aapki kaise madad kar sakta hoon?",
+                    "Kaise ho aap! Museum ghumne mein main aapki kaise madad kar sakta hoon?",
+                    "Namaskar! Main aapke liye kya kar sakta hoon?"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "prashan",
+                "patterns": [
+                    "Mujhe ek sawaal poochhna hai",
+                    "Mujhe kuch jaan'na hai",
+                    "Kya aap mujhe guide kar sakte hain?",
+                    "Mujhe kuch doubts hain",
+                    "Main confuse hoon",
+                    "Mai kuch puchna chahta hu",
+                    "Mai duvidha mai hu"
+                ],
+                "responses": [
+                    "Aap bejhijak sawal poocho Main aapki madad karunga",
+                    "Sawaal poochne mai sankoch naa kare",
+                    "Beshak Main aapki madad karoonga",
+                    "Mujhe aapki madad karne mai khushi hogi"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "alvida",
+                "patterns": [
+                    "Appa Phir milenge",
+                    "Alvida",
+                    "Aap se baat karke acha laga, dhanyavad",
+                    "Agli baar tak ke liye"
+                ],
+                "responses": [
+                    "Phir milenge!",
+                    "Aapka din shubh ho",
+                    "Bye! Jaldi phir aaiyega.",
+                    "Mai aapki madad kar paaya mujhe iss baat ki khushi hai"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "shukriya",
+                "patterns": [
+                    "Shukriya",
+                    "Dhanyavad",
+                    "Yeh bahut madadgar tha",
+                    "Awesome, shukriya",
+                    "Madad karne ke liye shukriya",
+                    "Aapne meri bahut madad ki",
+                    "Aapka kaam impressive hai",
+                    "Aapke responses better ho rahe hain",
+                    "Impressive",
+                    "Aapke output impressive hain"
+                ],
+                "responses": [
+                    "Mera sukh",
+                    "Aapka swagat hai",
+                    "Mujhe khushi hui yee jaanke ki mai aapki madad kar paya"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "prashan_uttar_positive",
+                "patterns": [
+                    "Main accha hoon",
+                    "Main theek hoon",
+                    "Main khush hoon",
+                    "Main awesome hoon",
+                    "Main bahut khush hoon",
+                    "Main achha mehsoos kar raha hoon",
+                    "Main achha kar raha hoon"
+                ],
+                "responses": [
+                    "Great!! Main aapki kaise madad kar sakta hoon?",
+                    "Aapke liye khushi hui... Aaj main aapki madad kaise kar sakta hoon?"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "prashan_uttar_negative",
+                "patterns": [
+                    "Main udaas hoon",
+                    "Main khush nahi hoon",
+                    "Mujhe achaa nahi lag raha hai",
+                    "Main accha mehsus nahi kar raha hoon",
+                    "Mera dil toota hua hai",
+                    "Main gussa hoon",
+                    "Main niraash hoon"
+                ],
+                "responses": [
+                    "Thik hai!! Main samajhta hoon, aapko apne man ko dusri cheezon mein lagana chahiye. Chaliye shuru karte hain... Koshish karo apne nazdeek ek museum visit karo :)"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "nakaratmak",
+                "patterns": [
+                    "Yeh poor response tha",
+                    "Aap slow hain",
+                    "Woh galat output tha",
+                    "Yeh incorrect tha",
+                    "Yeh sahi nahi tha",
+                    "Aap awful hain",
+                    "Galat",
+                    "Aapne galti ki",
+                    "Aapka output incorrect hai",
+                    "Aapka kaam slow hai"
+                ],
+                "responses": [
+                    "Mujhe maaf kariye. Lekin, main aasha karta hoon ki mere naye update ke baad aapko aisi pareshani nahi hogi... Tab tak, mujhe ek aur mauka dein"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "parchi_kaatna",
+                "patterns": [
+                    "mai delhi science museum ki ticket book karna chata hu",
+                    "delhi science museum ki ticket book karo",
+                    "Ticket book karo",
+                    "Main ticket book karna chahta hoon",
+                    "Kya main tickets le sakta hoon?",
+                    "Main ticket kaise khareedoon?",
+                    "Museum ke liye ticket book karo",
+                    "Mujhe ek ticket chahiye",
+                    "Mere liye ticket reserve karo",
+                    "Tickets kaise reserve karoon?",
+                    "Main ticket kahaan se khareed sakta hoon?",
+                    "Mujhe ticket khareedni hai",
+                    "Entry tickets kaise milengi?",
+                    "Main apne visit ko reserve karna chahta hoon",
+                    "Mujhe Tickets book karne mai sahita chahiye",
+                    "vigyan bhawan ki ticket book karo"
+                ],
+                "responses": [
+                    "Main khushi se aapko tickets khareedne mein madad karoonga. Neeche diye gaye link par click karein: \n{link}",
+                    "Zaroor, main aapki madad kar sakta hoon. Tickets khareedne ke liye neeche diye gaye link ka istemal karein: \n{link}",
+                    "Bilkul! Aap neeche diye gaye link par click karke apne tickets khareed sakte hain: \n{link}",
+                    "Bilkul, main aapke liye tickets lene mai sahita kar sakta hu. Aage badhne ke liye yahan click karein: \n{link}",
+                    "Koi problem nahi! Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Main yahaan hoon madad ke liye! Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Zaroor! Neeche diye gaye link ka palan karein apne tickets secure karne ke liye: \n{link}",
+                    "Main uska dhyan rakh loonga. Tickets khareedne ke liye neeche diye gaye link par click karein: \n{link}"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "ticket_rad_karna",
+                "patterns": [
+                    "Booking cancel karo",
+                    "Visit cancel karne ke steps",
+                    "Main apne tickets cancel karna chahta hoon",
+                    "Tickets cancel karo",
+                    "Mujhe apna ticket cancel karna hai",
+                    "Kya main apni booking cancel kar sakta hoon?",
+                    "Main apna ticket kaise cancel karoon?",
+                    "Mera ticket cancel karo please",
+                    "Main apna museum ticket cancel karna chahta hoon",
+                    "Tickets cancel karo",
+                    "Main bookings cancel karna chahta hoon",
+                    "Tickets cancel karo",
+                    "Booking cancel karo",
+                    "vigyan bhawan ki ticket cancel karo ",
+                    "vigyan bhawan ki ticket radd karne mai meri sahaiyata karo"
+                ],
+                "responses": [
+                    "Zaroor, main aapke ticket cancel karne mein madad kar sakta hoon. Aage badhne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Main aapki madad karoonga cancellation mein. Process shuru karne ke liye neeche diye gaye link ka palan karein: \n{link}",
+                    "Zaroor! Aap apne ticket cancel karne ke liye neeche diye gaye link ka istemal kar sakte hain: \n{link}",
+                    "Koi chinta nahi, main uska dhyan rakh loonga. Ticket cancel karne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Bilkul! Apne ticket cancellation shuru karne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Main yahaan hoon aapki madad karne ke liye. Simple click karein neeche diye gaye link par: \n{link}",
+                    "Bilkul, main aapki madad kar loonga. Ticket cancel karne ke liye neeche diye gaye link par click karein: \n{link}",
+                    "Main uska dhyan rakh loonga. Ticket cancel karne ke liye yahan click karein: \n{link}"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "delhi_vigyan_bhandar",
+                "patterns": [
+                    "national science museum kya hai",
+                    "delhi vigyan bhawan",
+                    "Mujhe nscm ke baare mein batao",
+                    "Main delhi science centre ke baare mein jaan'na chahta hoon",
+                    "Main delhi science museum ke baare mein jaan'na chahta hoon",
+                    "Mujhe National Science Centre, Delhi ke baare mein batao",
+                    "Main National Science Centre mein kya dekh sakta hoon?",
+                    "Mujhe Delhi ke Science Museum ke baare mein batao?",
+                    "Mujhe National Science museum Delhi ke details batao",
+                    "Mujhe delhi science museum ke baare mein jaankari chahiye",
+                    "Delhi science museum ke baare mein short mein batao",
+                    "National Science Centre mein kya khaas hai?",
+                    "Delhi ke Science Museum ke baare mein batao",
+                    "Delhi Science Centre ki history kya hai?",
+                    "National Science Centre kahan sith hai?",
+                    "Main Delhi ke Science Centre mein kya seekh sakta hoon?"
+                ],
+                "responses": [
+                    "National Science Centre, Delhi, ek zabardast science museum hai jo aapko science aur technology ke vishay mein prabhavit karne wala experience dega. Aapko yahaan par alag-alag exhibits aur displays milenge jo scientific concepts aur innovations ko dikhate hain. Yeh centre Pragati Maidan, New Delhi mein sthit hai. Aapko yahaan par interactive exhibits, planetarium shows, aur bahut kuch dekhne ko milega!"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "delhi_science_museum_khasiyat",
+                "patterns": [
+                    "mujhe science museum mei kya cheeje dekhne milegi",
+                    "mujhe science museum mei kya special cheej dekhne milegi",
+                    "museum mei kya special cheeje hai",
+                    "Khasiyat",
+                    "special in delhi science museum",
+                    "Mujhe Delhi Science Museum ke khasiyat ke baare mein batao",
+                    "Delhi Science Museum ke attractions ke baare mein batao",
+                    "Delhi Science Centre mein kya ummid kar sakta hoon?",
+                    "Delhi Science Museum ki khasiyat kya hain?",
+                    "Delhi Science museum ki khasiyat kya hai",
+                    "Delhi Science Museum mein kaunse khaas events hote hain?",
+                    "NSCM ke paryatakon ke aakarshan ke baare mein information do",
+                    "NSCM ya Delhi Science Museum mein kya karna hai?",
+                    "Delhi Science Museum ke features kya hain?",
+                    "NSCM ki khasiyat kya hain?",
+                    "Delhi Science Museum mein kaunse exhibits hain?",
+                    "National Science Centre ke major highlights kya hain?",
+                    "Delhi ke Science Centre mein dekhne layak cheezein kya hain?",
+                    "Delhi Science Museum mein kaunse events attend kar sakta hoon?"
+                ],
+                "responses": [
+                    "Kuch major attractions mein Energy Ball, Science on Sphere, 3D Film Show, aur Biotech Lab shamil hain. Centre mein interactive exhibits, ek aquarium, aur hands-on science activities ke liye ek Innovation Hub bhi hai.",
+                    "1. Exhibits aur Galleries: Center mein kai permanent galleries hain, har ek science aur technology ke alag-alag aspects ko dedicated hai. Kuch prominent galleries mein shamil hain:\n\tHeritage Gallery: Jo Bharat ke science aur technology mein yogdan ko dikhata hai.\n\tFun Science Gallery: Interactive exhibits jo har umr ke visitors ke liye science seekhne ko mazedar banate hain.\n\tHuman Biology Gallery: Jo human body, uski anatomy, aur physiological processes par focus karta hai.\n\tPrehistoric Life Gallery: Earth par life ke evolution ko dikhata hai, prehistoric era se lekar modern times tak.\n\tInformation Revolution Gallery: Communication technology aur digital age ke advancements ko highlight karta hai.\n2. Interactive Exhibits: Center hands-on exhibits ke liye jaana jaata hai, jo visitors ko, khaaskar bachchon ko, scientific concepts mein engage karte hain practical aur enjoyable tareeke se.\n3. Science Shows aur Demonstrations: Regular live science shows, demonstrations, aur workshops organize ki jaati hain jo visitors ko aur engage karte hain. Yeh topics jaise physics, chemistry, aur environmental science par cover karte hain.\n4. 3D aur Science on a Sphere: Center mein ek 3D theater aur 'Science on a Sphere' exhibit bhi hai, jahan spherical projections Earth aur space ke baare mein immersive learning experience create karte hain.\n5. Temporary Exhibitions: Permanent galleries ke alawa, National Science Centre mein alag-alag contemporary science topics par temporary exhibitions bhi host ki jaati hain.\n6. Educational Programs: Center kai educational programs conduct karta hai, jisme science camps, teacher training workshops, aur students ke liye competitions shamil hain.\n7. Planetarium: National Science Centre ke paas hi Nehru Planetarium hai jo center ke educational offerings ko complement karta hai, astronomy mein immersive experience provide karta hai.",
+                    "Science Fairs ka hissa baniye apne creative aur research-based skills ko nurture karne ke liye. Science Fairs young crowd ko attract karte hain jo mathematics/science mein achhe hain ya engineering mein apna career banana chahte hain.\nSky-watching sessions mein shamil ho Sky Observation Camp mein aur anubhav karein ki telescope se raat mein constellations, eclipses, meteor showers, aur doosre celestial bodies ko dekhne ka maza kya hai.\nHar din centre mein school students aur general audience ke liye organize hone wale alag-alag science shows ka anand lijiye. Yeh shows science learning ko fun aur interesting banane ke liye design kiye jaate hain. Kuch popular topics jo ek demonstrator explain karta hai, unmein Kitchen Chemistry, Super Cold Show, Sound Show, etc. shamil hain.\nImportant days jaise National Technology Day, World Health Day, World Population Day, Engineer’s Day, World Environment Day, World Telecommunication Day, aur World Health Day ko National Science Centre mein manaiye taaki aapko inn dinon ke commemorative mahine ka pata chale. Yeh celebrations logon mein awareness badhate hain aur unhe invite karne ke liye encourage bhi karte hain."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "parchi",
+                "patterns": [
+                    "parchi",
+                    "ticket ka price kya hai?",
+                    "ticket price ka segregation kya hai?",
+                    "parchi ka mulya",
+                    "tickets ke baare mein batao",
+                    "parchi mathe par",
+                    "parchi kitne ki hai",
+                    "ticket kitne ki hai",
+                    "science museum delhi ke liye ticket ka price kya hai?",
+                    "Parchi ki cost kya hai"
+                ],
+                "responses": [
+                    "National Science Centre, Delhi visit karne ke liye entry fee general public ke liye INR 70 per person hai. Agar aap 25 se zyada logon ke group mein travel kar rahe hain, toh aapko INR 60 per head dena hoga. Organized school groups se aane wale students ke liye charges INR 25 per head hain aur government school ke students ke liye INR 10 per head hain."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "samay",
+                "patterns": [
+                    "Mujhe timings ke baare mein jaana hai",
+                    "Visit karne ke timing kya hai?",
+                    "Delhi Science Museum kab khulta hai?",
+                    "Delhi Science Museum kab band hota hai?",
+                    "Delhi Science Museum ke timings kya hain?",
+                    "samay",
+                    "Delhi Science Museum kis samay khulta hai"
+                ],
+                "responses": [
+                    "Delhi Science Museum ke timings har roz 9:30 am se 6:00 pm tak hain. Museum public holidays aur festivals ke wajah se band ho sakta hai, iske liye latest news article refer karein."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "pahuchna_kaise_hai",
+                "patterns": [
+                    "pauchu",
+                    "pahunchu",
+                    "Wahan kaise pahunchna  hai?",
+                    "Main museum kaise pahunch sakta hoon?",
+                    "Museum ke liye directions kya hain?",
+                    "Museum pahunchne ke liye kya tareeke hain?",
+                    "Delhi Science Museum pahunchne ke methods ke baare mein batao",
+                    "sabse pass wali metro",
+                    "Museum kee pas konsa metro station hai",
+                    "Museum kaise pauch sakta hu",
+                    "mai science museum kaise pauchu"
+                ],
+                "responses": [
+                    "Delhi mein har umr ke logon ke liye kai tareeke ke transportation available hain. Apne holiday style aur budget ke hisaab se, aap inme se 3 options chun sakte hain:\nBy Metro: Indira Gandhi International Airport se Rajiv Chowk ke liye direct metro lein aur phir Rajiv Chowk se Pragati Maidan ke liye doosri metro lein. Wahan pahunchne ke baad, aap thoda walk kar sakte hain kyunki yeh sirf 1.2 km doori par hai.\nBy Bus: Ek aur convenient tareeka local bus ke zariye hai. Airport ke bahar se ek state-owned bus pakdiye apne desired destination par pocket-friendly prices mein pahunchne ke liye. Aapki suvidha ke liye, kai private buses bhi airport par available hain jo tourists ke liye dilli ke popular sightseeing places explore karne mein madad karti hain.\nBy Cab: Lastly, agar aap extra comfort chahte hain, toh Ola/Uber se ek rental taxi hire karein ya simply Delhi ke top car rental companies ke list se ek private cab chun lein. National Science Centre approximately airport se 15 km doori par hai aur yeh lagbhag 25 se 30 minutes lagenge yeh distance cab se cover karne mein."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "parking_hai",
+                "patterns": [
+                    "Kya wahan parking available hai?",
+                    "Parking ki suvidha hai kya?",
+                    "Kya main National Science Centre par park kar sakta hoon?",
+                    "Science center par parking ki suvidha hain?",
+                    "Delhi Science Centre ke paas kahaan park kar sakta hoon?"
+                ],
+                "responses": [
+                    "Haan, centre par parking facilities available hain, lekin weekend par spot secure karne ke liye jaldi pahunchna recommend kiya jaata hai."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "aas_paas_ki_aakarshan",
+                "patterns": [
+                    "Paas mein dekhne layak jagah kaunsi hain?",
+                    "Aas paas koi achi jagah hai?",
+                    "Paas mein kaunse places visit kar sakta hoon?",
+                    "National Science Centre ke paas kaunse attractions hain?",
+                    "Science Centre ke aas-paas kya dekhne layak hain?",
+                    "Nearby attractions ke baare mein batao",
+                    "Paas mein special cheezein"
+                ],
+                "responses": [
+                    "Nearby attractions mein India Gate, National Zoological Park, National Rail Museum, aur Purana Qila shamil hain. Yeh jagah historical aur cultural experiences ka mix offer karti hain."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "sampark_kare",
+                "patterns": [
+                    "Main National Science Centre se kaise contact kar sakta hoon?",
+                    "Sampark karne ke liye kya karna hoga?",
+                    "Science Centre ke liye contact details"
+                ],
+                "responses": [
+                    "Aap National Science Centre, Delhi se unke official phone number +91-11-2337-1703 par sampark kar sakte hai ya phir aap nscd@nscd.gov.in par email kar sakte hai"
+                ]
+            }
     ]
 }
