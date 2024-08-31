@@ -179,6 +179,7 @@ def process_string():
     for i in range(len(ints)):
         if(float(ints[i]["probability"])>=0.5):
                 if(ints[i]['intent']=='book_ticket' or ints[i]['intent']=='parchi_kaatna'):
+                    
                     user_text=input_string
                     date_pattern = (
                         r'\b(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})\b|'
@@ -245,6 +246,10 @@ def process_string():
                     museum_list = {
                         "Delhi Science Center": "Delhi%20Science%20Museum",
                         "Delhi Science Museum": "Delhi%20Science%20Museum",
+                        "National science museum":'Delhi%20Science%20Museum',
+                        "National science center":'Delhi%20Science%20Museum',
+                        "Delhi museum":'Delhi%20Science%20Museum'
+
                     }
 
                     def extract_museum_from_list(text, museums):
@@ -258,11 +263,12 @@ def process_string():
 
                     if not museum:
                         museum = 'Not found'
-                        
+                    
                     json_temp={
                         "Museum":museum if museum else 'Not found',
                         "Date":date.strftime('%d-%m-%Y') if date else 'Invalid date'
                     }
+                    json_temp["intent"]="book tickets"
 
                     # print(f"Museum: {museum if museum else 'Not found'}")
                     # print(f"Date: {date.strftime('%d-%m-%Y') if date else 'Invalid date'}")
