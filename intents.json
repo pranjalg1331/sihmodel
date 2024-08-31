@@ -1,0 +1,214 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Good day",
+                "Hey",
+                "Hi there",
+                "Is anyone there?"
+            ],
+            "responses": [
+                "Hello, how can I assist you today?",
+                "Hi! How can I help with your visit to the museum?",
+                "Good day! What can I do for you?"
+            ],
+            "context": [""]
+        },
+        {"tag": "query",
+            "patterns": ["I have a query", "I want to know something", "can you guide me", "I have some doubts", "I am confuse"],
+            "responses": ["I will assist you ", "feel free to ask questions", "I will help you"],
+            "context": [""]
+        },
+        {"tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": [""]
+        },
+        {"tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","I was helpful","your work is impressive","your responses are getting better","impressive","your output are impressive"],
+            "responses": ["My pleasure", "You're Welcome"],
+            "context": [""]
+        },
+        {"tag": "ask_questionsp",
+            "patterns": ["I am good", "I am fine", "I am happy", "I am awesome", "I am very happy","I am feeling good","I am doing good"],
+            "responses": ["Great!! How can I help you ?", "Felt happy for you... How can I help you today ?"],
+            "context": [""]
+        },
+        {"tag": "ask_questionsn",
+            "patterns": ["I am sad", "I am not happy", "I am not doing good", "I am heartbroken", "I am not feeling good","I am angry","I am hopeless"],
+            "responses": ["Okay!! I guess you should engage yourself towards other things so let's start ...Try to visit a museum near you :)"],
+            "context": [""]
+        },
+        {"tag": "negative",
+            "patterns": ["It was poor response","you are slow","that was wrong output","it was incorrect","it wasn't correct","you are awful","wrong","you made mistake","Your output is incorrect","your work is slow"],
+            "responses": ["I am sorry. But, I am sure that you will not face such difficulty after my new update... Till then please give me another try"],
+            "context": [""]
+        },
+
+        {
+            "tag": "book_ticket",
+            "patterns": [
+                "I want to book a ticket",
+                "Can I get tickets?",
+                "How do I buy a ticket?",
+                "Book a ticket for the museum",
+                "Get me a ticket"
+            ],
+            "responses": [
+                "I'd be happy to assist with purchasing tickets. Just click the link below: \n{link}",
+                "Sure, I can help you with that. Please use the link below to buy your tickets: \n{link}",
+                "Of course! You can buy your tickets by clicking the link below: \n{link}",
+                "Absolutely, I'll help you get those tickets. Click here to proceed: \n{link}",
+                "No problem! Just click the link below to purchase your tickets: \n{link}",
+                "I'm here to help! Go ahead and click the link to buy your tickets: \n{link}",
+                "Certainly! Please follow the link below to secure your tickets: \n{link}",
+                "I'll take care of that for you. Click the link to buy your tickets: \n{link}"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "cancel_ticket",
+            "patterns": [
+                "ticket cancelation",
+                "Steps to cancel the visit",
+                "I want to cancel my tickets",
+                "cancel the tickets",
+                "I need to cancel my ticket",
+                "Can I cancel my booking?",
+                "How do I cancel my ticket?",
+                "Cancel my ticket please",
+                "I want to cancel my museum ticket",
+                "cancel the tickets"
+            ],
+            "responses": [
+                "Sure, I can help you cancel your ticket. Just click the link below to proceed: \n{link}",
+                "I'll assist with the cancellation. Use the link below to start the process: \n{link}",
+                "Certainly! You can use the link below to cancel your ticket: \n{link}",
+                "No worries, I'll assist with that. Follow the link below to cancel your ticket: \n{link}",
+                "Of course! Click the link below to initiate your ticket cancellation: \n{link}",
+                "I'm here to help with your cancellation. Simply click the link below: \n{link}",
+                "Absolutely, I'll help you out. Please click the link below to cancel your ticket: \n{link}",
+                "I'll take care of that for you. Click here to cancel your ticket: \n{link}"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "delhi_science_centre",
+            "patterns": [
+                "Tell me about the National Science Centre in Delhi",
+                "What can I see at the National Science Centre?",
+                "Tell me about Delhi's Science Museum?",
+                "Details about National Science museum Delhi",
+                "nscm",
+                "delhi science museum",
+                "tell me about delhi science museum in brief"
+            ],
+            "responses": [
+                "The National Science Centre in Delhi is one of the largest and most popular science museums in India. Located in the Pragati Maidan area, it is part of the National Council of Science Museums (NCSM) and serves as a hub for science education and popularization.",
+                "The National Science Centre established in 1992, is a science museum in Delhi, India. It is part of the National Council of Science Museums (NCSM), an autonomous body under India's Ministry of Culture. It stands close to Gate no 1, of Pragati Maidan overlooking the Purana Qila.",
+                "The National Science Centre in Delhi is a prominent museum that offers an engaging experience with a wide array of science and technology exhibits, making it an ideal destination for visitors of all ages. Located near Pragati Maidan, it is easily accessible via the Supreme Court/Pragati Maidan metro station."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "char_of_delhi_science_museum",
+            "patterns": [
+                "Tell me about attractions of delhi science museum",
+                "What to expect at the Delhi Science Centre?",
+                "What are the characteristics of delhi science museum",
+                "What special events happen at delhi science museum",
+                "give me information for nscm tourist attraction",
+                "what to do at nscm or in delhi science museum",
+                "Features of delhi science museum",
+                "features of nscm"
+            ],
+            "responses": [
+                "Some of the major attractions include the Energy Ball, Science on Sphere, 3D Film Show, and the Biotech Lab. The centre also features interactive exhibits, an aquarium, and an Innovation Hub for hands-on science activities.",
+                "1. Exhibits and Galleries: The center boasts several permanent galleries, each dedicated to different aspects of science and technology. Some of the prominent galleries include:\n\tHeritage Gallery: Showcases India's contributions to science and technology throughout history.\n\tFun Science Gallery: Interactive exhibits that make learning science fun for visitors of all ages.\n\tHuman Biology Gallery: Focuses on the human body, its anatomy, and physiological processes.\n\tPrehistoric Life Gallery: Explores the evolution of life on Earth, from the prehistoric era to modern times.\n\tInformation Revolution Gallery: Highlights the advancements in communication technology and the digital age.\n2. Interactive Exhibits: The center is known for its hands-on exhibits, which encourage visitors, especially children, to engage with scientific concepts in a practical and enjoyable manner.\n3. Science Shows and Demonstrations: Regular live science shows, demonstrations, and workshops are conducted to further engage visitors. These cover topics ranging from physics and chemistry to environmental science.\n4. 3D and Science on a Sphere: The center also features a 3D theater and a 'Science on a Sphere' exhibit, where spherical projections create an immersive experience for learning about Earth and space.\n5. Temporary Exhibitions: In addition to the permanent galleries, the National Science Centre also hosts temporary exhibitions on various contemporary science topics.\n6. Educational Programs: The center conducts numerous educational programs, including science camps, teacher training workshops, and competitions for students.\n7. Planetarium: Although not part of the National Science Centre itself, the nearby Nehru Planetarium complements the center's educational offerings, providing an immersive experience in astronomy.",
+                "Be a part of the science fairs to nurture your creative and research-based skills. The Science Fairs are conducted to draw the attention of the young crowd who are good in mathematics/science or interested in taking their career ahead in engineering.\nAttend the sky-watching sessions in the Sky Observation Camp and experience what it feels like to observe the various constellations along with eclipses, meteor showers, and other celestial bodies through the telescope at night.\nEnjoy the various science shows organized by the center on an everyday basis for school students as well as for the general audience. These kinds of shows are designed to make science learning fun and interesting. Some of the popular topics a demonstrator explains are Kitchen Chemistry, Super Cold Show, Sound Show, etc.\nCelebrate important days like National Technology Day, World Health Day, World Population Day, Engineer’s Day, World Environment Day, World Telecommunication Day, and World Health Day at the National Science Centre to increase your knowledge about the commemorative days. Not only do these celebrations raise awareness among people but also encourage them to invite others as well."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "Ticket",
+            "patterns": [
+                "what is ticket price?",
+                "What are segregation of ticket price?",
+                "ticket price",
+                "tell me about tickets",
+                "tickets per head",
+                "what is ticket price for science museum delhi"
+                
+            ],
+            "responses": [
+                "The entry fee to visit the National Science Centre in Delhi is INR 70 per person for general people. In case you're traveling in a group of more than 25 people, you'll need to pay INR 60 per head. For students from organized school groups, the charges are INR 25 per head and for government school goers, it costs INR 10 per head."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "Timings",
+            "patterns": [
+                "what is timing for visit?",
+                "when delhi science museum opens?",
+                "when delhi science museum closes",
+                "what are timings for delhi science museum"
+            ],
+            "responses": [
+                "The timings for delhi science museum is from 9.30 am to 6.00pm everyday. Museum might close because of public holidays and festivals please refer for latest news article for the same."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "how_to_reach",
+            "patterns": [
+                "how to reach there",
+                "how can I reach to museum?",
+                "directions for museum",
+                "what are the ways to reach museum",
+                "tell me about the methods to reach delhi science museum"
+            ],
+            "responses": [
+                "In Delhi, there are several modes of transportation available for people of all ages. Depending on your holiday style and budget, you can choose from the following 3 options:\nBy Metro: Take a direct metro from the Indira Gandhi International Airport to Rajiv Chowk and then another metro from Rajiv Chowk to Pragati Maidan. After reaching there, you can enjoy a short stroll as it is only 1.2 km away.\nBy Bus: Another convenient way is via a local bus. Catch a state-owned bus outside the airport to reach your desired destination at pocket-friendly prices. For your ease, many private buses are also available at the airport for tourists to roam around and explore the popular sightseeing places in Delhi.\nBy Cab: Lastly, if you're looking for extra comfort, choose to hire a rental taxi from Ola/Uber or simply go ahead with a private cab from the list of top car rental companies in Delhi. The National Science Centre is approximately 15 km away from the airport and it will take nearly 25 to 30 minutes to cover the required distance by cab."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "parking_availability",
+            "patterns": [
+                "Is there parking available?",
+                "Can I park at the National Science Centre?",
+                "Are there parking facilities at the science center?",
+                "Where can I park near the Delhi Science Centre?"
+            ],
+            "responses": [
+                "Yes, parking facilities are available at the centre, but it's recommended to arrive early to secure a spot, especially on weekends."
+            ]
+        },
+        {
+            "tag": "nearby_attractions",
+            "patterns": [
+                "What places can I visit nearby?",
+                "Attractions close to the National Science Centre",
+                "Places to see around the Science Centre",
+                "tell me about nearby attractions"
+            ],
+            "responses": [
+                "Nearby attractions include India Gate, the National Zoological Park, the National Rail Museum, and Purana Qila. These spots offer a mix of historical and cultural experiences."
+            ]
+        },
+        {
+            "tag": "contact_info",
+            "patterns": [
+                "How can I contact the National Science Centre?",
+                "What's the contact number?",
+                "Contact details for the Science Centre"
+            ],
+            "responses": [
+                "You can contact the National Science Centre, Delhi, at their official phone number +91-11-2337-1703 or via email at nscd@nscd.gov.in."
+            ]
+        }
+    ]
+}
