@@ -51,11 +51,20 @@
         {
             "tag": "book_ticket",
             "patterns": [
+                "ticket booking",
+                "ticket book",
                 "I want to book a ticket",
                 "Can I get tickets?",
                 "How do I buy a ticket?",
                 "Book a ticket for the museum",
-                "Get me a ticket"
+                "Get me a ticket",
+                "Reserve a ticket for me",
+                "How to reserve tickets?",
+                "Where can I purchase a ticket?",
+                "I need to buy a ticket",
+                "How can I get entry tickets?",
+                "I want to reserve my visit",
+                "book tickets"
             ],
             "responses": [
                 "I'd be happy to assist with purchasing tickets. Just click the link below: \n{link}",
@@ -72,6 +81,7 @@
         {
             "tag": "cancel_ticket",
             "patterns": [
+                "cancel booking",
                 "ticket cancelation",
                 "Steps to cancel the visit",
                 "I want to cancel my tickets",
@@ -81,7 +91,10 @@
                 "How do I cancel my ticket?",
                 "Cancel my ticket please",
                 "I want to cancel my museum ticket",
-                "cancel the tickets"
+                "cancel the tickets",
+                "I want to cancel bookings",
+                "cancel tickets",
+                "cancel booking"
             ],
             "responses": [
                 "Sure, I can help you cancel your ticket. Just click the link below to proceed: \n{link}",
@@ -98,13 +111,21 @@
         {
             "tag": "delhi_science_centre",
             "patterns": [
+                "tell me about nscm",
+                "I want to know about delhi science centre",
+                "I want to know about delhi science museum",
                 "Tell me about the National Science Centre in Delhi",
                 "What can I see at the National Science Centre?",
                 "Tell me about Delhi's Science Museum?",
                 "Details about National Science museum Delhi",
                 "nscm",
                 "delhi science museum",
-                "tell me about delhi science museum in brief"
+                "tell me about delhi science museum in brief",
+                "What's special about the National Science Centre?",
+                "Describe the Science Museum in Delhi",
+                "What's the history of Delhi's Science Centre?",
+                "Where is the National Science Centre located?",
+                "What can I learn at Delhi's Science Centre?"
             ],
             "responses": [
                 "The National Science Centre in Delhi is one of the largest and most popular science museums in India. Located in the Pragati Maidan area, it is part of the National Council of Science Museums (NCSM) and serves as a hub for science education and popularization.",
@@ -116,6 +137,8 @@
         {
             "tag": "char_of_delhi_science_museum",
             "patterns": [
+
+                "I want to know about attractions of delhi science museum",
                 "Tell me about attractions of delhi science museum",
                 "What to expect at the Delhi Science Centre?",
                 "What are the characteristics of delhi science museum",
@@ -123,7 +146,13 @@
                 "give me information for nscm tourist attraction",
                 "what to do at nscm or in delhi science museum",
                 "Features of delhi science museum",
-                "features of nscm"
+                "features of nscm",
+                "What exhibits are in the Delhi Science Museum?",
+                "What are the major highlights of the National Science Centre?",
+                "What are the top things to see at Delhi’s Science Centre?",
+                "What kind of events can I attend at the Delhi Science Museum?",
+                "What interactive exhibits are available at the National Science Centre?"
+
             ],
             "responses": [
                 "Some of the major attractions include the Energy Ball, Science on Sphere, 3D Film Show, and the Biotech Lab. The centre also features interactive exhibits, an aquarium, and an Innovation Hub for hands-on science activities.",
@@ -135,6 +164,7 @@
         {
             "tag": "Ticket",
             "patterns": [
+                "tickets",
                 "what is ticket price?",
                 "What are segregation of ticket price?",
                 "ticket price",
@@ -151,10 +181,13 @@
         {
             "tag": "Timings",
             "patterns": [
+                "I want to know about timings",
                 "what is timing for visit?",
                 "when delhi science museum opens?",
                 "when delhi science museum closes",
-                "what are timings for delhi science museum"
+                "what are timings for delhi science museum",
+                "timing",
+                "timming"
             ],
             "responses": [
                 "The timings for delhi science museum is from 9.30 am to 6.00pm everyday. Museum might close because of public holidays and festivals please refer for latest news article for the same."
@@ -168,7 +201,9 @@
                 "how can I reach to museum?",
                 "directions for museum",
                 "what are the ways to reach museum",
-                "tell me about the methods to reach delhi science museum"
+                "tell me about the methods to reach delhi science museum",
+                "nearest metro",
+                "near metro station"
             ],
             "responses": [
                 "In Delhi, there are several modes of transportation available for people of all ages. Depending on your holiday style and budget, you can choose from the following 3 options:\nBy Metro: Take a direct metro from the Indira Gandhi International Airport to Rajiv Chowk and then another metro from Rajiv Chowk to Pragati Maidan. After reaching there, you can enjoy a short stroll as it is only 1.2 km away.\nBy Bus: Another convenient way is via a local bus. Catch a state-owned bus outside the airport to reach your desired destination at pocket-friendly prices. For your ease, many private buses are also available at the airport for tourists to roam around and explore the popular sightseeing places in Delhi.\nBy Cab: Lastly, if you're looking for extra comfort, choose to hire a rental taxi from Ola/Uber or simply go ahead with a private cab from the list of top car rental companies in Delhi. The National Science Centre is approximately 15 km away from the airport and it will take nearly 25 to 30 minutes to cover the required distance by cab."
@@ -190,10 +225,13 @@
         {
             "tag": "nearby_attractions",
             "patterns": [
+                "places nearby",
+                "near by place",
                 "What places can I visit nearby?",
                 "Attractions close to the National Science Centre",
                 "Places to see around the Science Centre",
-                "tell me about nearby attractions"
+                "tell me about nearby attractions",
+                "nearby special things"
             ],
             "responses": [
                 "Nearby attractions include India Gate, the National Zoological Park, the National Rail Museum, and Purana Qila. These spots offer a mix of historical and cultural experiences."
