@@ -19,7 +19,7 @@ intents = json.loads(open(r'intents3.json').read())
 
 words = pickle.load(open(r'words5.pkl', 'rb'))
 classes = pickle.load(open(r'classes5.pkl', 'rb'))
-model = load_model(r'models\test11.h5')
+model = load_model(r'test10.h5')
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
