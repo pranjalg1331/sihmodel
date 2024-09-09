@@ -1,0 +1,129 @@
+{
+    "intents": [
+        {
+            "tag": "find_location",
+            "patterns": [
+            "National Science Centre Delhi",
+            "National Railway ",
+            "Victoria Memorial Hall",
+            "Salar Jung Museum",
+            "I want to go National Science Centre Delhi",
+            "I want to go National Railway ",
+            "I want to go Victoria memorial hall",
+            "I want to go salar jung ",
+            "I'd like to visit the Science Centre in Delhi.",
+            "Can I book tickets for the railway ?",
+            "I want to check out that memorial in Kolkata, can I get tickets?",
+            "Can you reserve tickets for the Salar Jung?",
+            "I want to visit the science centre in Delhi.",
+            "Can I get tickets to the railway history ?",
+            "I'd like to see the Victoria Memorial, can you book tickets?",
+            "Can you book tickets for Salar Jung museum?",
+            "I'd like to visit the science museum in Delhi this weekend.",
+            "Can I get two tickets for the National Railway ?",
+            "Please book my tickets for the Victoria Memorial Hall.",
+            "I want to check out the Salar Jung Museum.",
+            "Book my tickets for the science museum in Delhi.",
+            "Can you get me tickets for the memorial in Kolkata?",
+            "Please book tickets for the Salar Jung Museum next week.",
+            "Can I get tickets for the science centre near Delhi?",
+            "I want to visit the railway museum this weekend.",
+            "Help me book tickets for the Victoria Memorial in Kolkata.",
+            "I'd like tickets to the Salar Jung in Hyderabad."
+            ],
+            "responses": [
+                "Thank you I got your museum's location :)"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "find_date",
+            "patterns": [
+            "I will go there by 9 sept",
+            "I will make my visit on 10/10/2024",
+            "I will go museum on 9-jul-2024",
+            "can i have my ticket on 12 aug",
+            "12-09-2024",
+            "24/09/2025",
+            "monday tuesday wednesday thrusday friday saturday sunday",
+            "jan feb mar apr may jun jul aug sept oct nov dec",
+            "january february march april may june july august september october november december",
+            "2023 2034 2025 2026 2027",
+            "I want to book tickets for September 15th.",
+            "Can I get tickets for next Friday?",
+            "Please reserve tickets for the 23rd of November.",
+            "I'd like to book a ticket for tomorrow.",
+            "Book two tickets for October 1st.",
+            "Reserve a spot for me on the 12th of this month.",
+            "I need tickets for the 25th of this month.",
+            "Please schedule a ticket for December 31st.",
+            "I want to book tickets for this Saturday.",
+            "Can you reserve a seat for the first week of October?",
+            "I need a ticket for today.",
+            "I want to book tickets for next weekend.",
+            "Please book tickets for the upcoming Friday.",
+            "I want to reserve tickets for the end of the month.",
+            "Can I book a ticket for December 10th?",
+            "I want to schedule a ticket for next Tuesday.",
+            "Reserve two tickets for the 3rd of January.",
+            "Please book tickets for the last week of November.",
+            "I'd like to reserve tickets for next Wednesday.",
+            "Can you book tickets for this Friday?",
+            "I'd like to get tickets for the 5th of November.",
+            "Book my ticket for the weekend after next.",
+            "Please schedule my tickets for next month.",
+            "I want to book tickets for November 30th."
+            ],
+            "responses": [
+                "Thank you I got your visit date :)"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "find_type",
+            "patterns": [
+                "i want to book General Entry ticket.",
+                "please book the students entry ticket",
+                "please book ticket for General Entry for a group.",
+                "i want ticket for General Entry with a BPL card.",
+                "book school group entry.",
+                "the all-inclusive package ticket ",
+                "i want to book SDL for children.",
+                "please book 3D Film ticket.",
+                "book SOS entry for adults.",
+                "the fantasy ride ticket ",
+                "General Entry ticket for me.",
+                "BPL card entry. ticket ",
+                "SDL for adults. ticket ",
+                "i want to secure my seat for students group entry.",
+                "please book the package deal ticket",
+                "please book the SOS adult entry ticket",
+                "i need to book the 3D film.",
+                "can i have a students group entry ticket",
+                "will you give me SDL for kids entry",
+                "i want General Entry for the group.",
+                "please book holoshow  for adults ticket",
+                "the fantasy ride sounds exciting i want to book that one.",
+                "just the General Entry.",
+                "General Entry",
+                "General Entry for large group",
+                "General Entry with bpl card",
+                "Students Entry school group",
+                "Student entry gov school ticket",
+                "3d film ticket",
+                "SDL/Taramandal adult ticket",
+                "SDL/Taramandal children ticket",
+                "SOS Entry adult ticket",
+                "Holoshow Entry Adult entry ticket",
+                "Fantasy Ride ticket",
+                "Package (All Inclusive) ticket book"
+                
+            
+            ],
+            "responses": [
+                "Thank you I got your ticket type :)"
+            ],
+            "context": [""]
+        }
+    ]
+}

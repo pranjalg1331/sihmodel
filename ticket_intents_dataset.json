@@ -1,0 +1,124 @@
+{
+    "intents": [
+        {
+            "intent": "General Entry",
+            "examples": [
+                "I want a general entry ticket",
+                "How much for the general entry?",
+                "Can I get the price of the general entry?",
+                "General entry ticket price",
+                "Buy general entry ticket"
+            ]
+        },
+        {
+            "intent": "General Entry (Group >25)",
+            "examples": [
+                "We are a group of more than 25 people, how much for entry?",
+                "What\u2019s the cost for group entry?",
+                "Group entry ticket for 25 or more",
+                "Price for group entry",
+                "Group entry cost for more than 25 people"
+            ]
+        },
+        {
+            "intent": "General Entry (BPL Card)",
+            "examples": [
+                "What\u2019s the price for general entry with a BPL card?",
+                "Do you have a BPL card entry rate?",
+                "How much is general entry for BPL?",
+                "BPL card general entry price",
+                "General entry fee with BPL card"
+            ]
+        },
+        {
+            "intent": "Students Entry (School Group)",
+            "examples": [
+                "What\u2019s the rate for students in a school group?",
+                "School group students ticket",
+                "Student group entry price?",
+                "How much for school group student entry?",
+                "Price for school student group entry"
+            ]
+        },
+        {
+            "intent": "Students Entry (Govt/MCD School)",
+            "examples": [
+                "How much is the ticket for students from a government or MCD school?",
+                "Govt school student entry",
+                "MCD school student ticket price",
+                "Price for government school student entry",
+                "Govt/MCD school student ticket cost"
+            ]
+        },
+        {
+            "intent": "3D Film",
+            "examples": [
+                "I want a ticket for the 3D film",
+                "How much is the 3D movie?",
+                "Price for the 3D film?",
+                "3D movie ticket price",
+                "3D film entry fee"
+            ]
+        },
+        {
+            "intent": "SDL/Taramandal (Adult)",
+            "examples": [
+                "What\u2019s the price for SDL/Taramandal for adults?",
+                "Taramandal adult ticket price?",
+                "SDL adult entry fee?",
+                "Adult SDL ticket price",
+                "SDL for adults cost"
+            ]
+        },
+        {
+            "intent": "SDL/Taramandal (Children)",
+            "examples": [
+                "What\u2019s the price for SDL/Taramandal for children?",
+                "Taramandal children ticket price?",
+                "SDL children entry fee?",
+                "Children SDL ticket price",
+                "SDL for kids cost"
+            ]
+        },
+        {
+            "intent": "SOS Entry (Adult)",
+            "examples": [
+                "How much for SOS entry for adults?",
+                "SOS adult ticket",
+                "Price for SOS entry for adults?",
+                "SOS adult entry cost",
+                "Ticket for adult SOS entry"
+            ]
+        },
+        {
+            "intent": "Holoshow Entry (Adult)",
+            "examples": [
+                "Holoshow entry price for adults",
+                "Ticket for the holoshow for an adult",
+                "How much is a ticket for the adult holoshow?",
+                "Holoshow adult ticket cost",
+                "Price of holoshow for adults"
+            ]
+        },
+        {
+            "intent": "Fantasy Ride",
+            "examples": [
+                "How much for the fantasy ride?",
+                "Ticket price for the fantasy ride",
+                "I want to buy a fantasy ride ticket",
+                "Fantasy ride cost",
+                "Price for fantasy ride"
+            ]
+        },
+        {
+            "intent": "Package (All Inclusive)",
+            "examples": [
+                "What\u2019s included in the all-inclusive package?",
+                "All-inclusive package price",
+                "How much for the all-inclusive package?",
+                "Price for all-inclusive package",
+                "What is the cost of the all-inclusive package?"
+            ]
+        }
+    ]
+}
